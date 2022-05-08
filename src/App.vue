@@ -36,7 +36,7 @@ components: {
       </div>
     </div>
 
-    <div class="bg-blue lg:w-10/12 lg:mx-0 mx-4 text-white rounded-xl p-8 my-8 mx-auto">
+    <div class="bg-blue lg:w-10/12 lg:mx-auto mx-4 text-white rounded-xl p-8 my-8">
       <div class="lg:text-5xl text-4xl text-center">Journey of our Success</div>
       <div class="lg:flex justify-evenly mt-20">
         <div class="lg:w-1/5">
