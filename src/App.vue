@@ -2,9 +2,10 @@
 import HeaderNav from "./components/HeaderNav.vue";
 import Hero from "./components/Hero.vue";
 import Footer from "./components/Footer.vue";
+import Carousel from "./components/Carousel.vue";
 
 components: {
-  HeaderNav, Hero, Footer;
+  HeaderNav, Hero, Footer, Carousel;
 }
 </script>
 
@@ -137,7 +138,9 @@ components: {
         <div class="lg:text-5xl text-4xl my-6">What our Customers say</div>
         <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam odio laboriosam dicta voluptas!</div>
       </div>
-      <div class="my-10"></div>
+      <div class="my-10">
+        <Carousel />
+      </div>
     </div>
     <Footer />
   </div>
