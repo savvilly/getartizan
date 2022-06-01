@@ -2,10 +2,9 @@
 import HeaderNav from "./components/HeaderNav.vue";
 import Hero from "./components/Hero.vue";
 import Footer from "./components/Footer.vue";
-import Carousel from "./components/Carousel.vue";
 
 components: {
-  HeaderNav, Hero, Footer, Carousel;
+  HeaderNav, Hero, Footer;
 }
 </script>
 
@@ -80,7 +79,7 @@ components: {
       <div class="lg:w-full">
         <img
           class="ml-auto"
-          src="./assets/about getartizan collage.jpg"
+          src="./assets/collage.jpg"
           alt=""
         />
       </div>
@@ -144,7 +143,7 @@ components: {
         </div>
       </div>
       <div class="lg:w-full">
-        <img class="ml-auto" src="./assets/daily life made easier.png" alt="" />
+        <img class="ml-auto" src="./assets/easier.png" alt="" />
       </div>
     </div>
     <div>
