@@ -12,7 +12,7 @@
       <div class="lg:mx-20 mx-8 flex justify-between">
         <router-link to="/">
           <!-- <img class="w-24 lg:w-32" src="../static/logo-black.png" alt="" /> -->
-          <img class="w-[93px]" src="/img/logo.png" alt="" />
+          <img class="w-50" src="../assets/logo.png" alt="" />
         </router-link>
         <a
           href="javascript:void(0)"
