@@ -27,11 +27,13 @@
           placeholder="Location"
           class="p-3 lg:w-44 w-full lg:mb-0 mb-2"
         />
-        <input
-          type="button"
-          class="p-3 px-14 lg:w-auto w-full lg:rounded-md bg-blue text-white"
-          value="Search"
-        />
+        <router-link to="/search">
+          <input
+            type="button"
+            class="p-3 px-14 lg:w-auto w-full lg:rounded-md bg-blue text-white"
+            value="Search"
+          />
+        </router-link>
       </div>
     </div>
     <div>

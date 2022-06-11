@@ -2,19 +2,28 @@
   <div class="bg-gray-100">
     <div class="flex justify-between lg:p-2">
       <div>
-        <img
-          src="../assets/logo.png"
-          class="lg:w-80 w-44 lg:mt-0 mt-3"
-          alt=""
-        />
+        <router-link to="/">
+          <img
+            src="../assets/logo.png"
+            class="lg:w-80 w-44 lg:mt-0 mt-3"
+            alt=""
+          />
+        </router-link>
       </div>
       <div class="flex justify-between 1/2 p-2">
         <div class="lg:flex hidden">
-          <div class="p-2">Home</div>
-          <div class="p-2">About Us</div>
-          <div class="p-2">Categories</div>
-          <div class="p-2">Task finder</div>
-
+          <router-link to="/">
+            <div class="p-2">Home</div>
+          </router-link>
+          <router-link to="/">
+            <div class="p-2">About Us</div>
+          </router-link>
+          <router-link to="/">
+            <div class="p-2">Categories</div>
+          </router-link>
+          <router-link to="/">
+            <div class="p-2">Task finder</div>
+          </router-link>
         </div>
 
         <div class="lg:ml-8 lg:mr-0 mr-6 flex lg:w-80 justify-evenly">

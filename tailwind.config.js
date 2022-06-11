@@ -15,6 +15,12 @@ module.exports = {
 
       },
     },
+    screens: {
+      'sm': { 'max': '700px' },
+      'md': '700px',
+      'lg': '1024px',
+      'xl': '1280px',
+    }
   },
   plugins: [],
 }
