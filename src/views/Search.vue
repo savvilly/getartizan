@@ -17,7 +17,17 @@ export default {
             class="lg:w-44 lg:h-44 w-32 h-32 mx-auto rounded-full"
             alt=""
           />
-          <div @click="modal = !modal" class="text-blue capitalize lg:text-base text-sm my-2 cursor-pointer">
+          <div
+            @click="modal = !modal"
+            class="
+              text-blue
+              capitalize
+              lg:text-base
+              text-sm
+              my-2
+              cursor-pointer
+            "
+          >
             View profile & reviews
           </div>
           <input
@@ -74,7 +84,6 @@ export default {
         </div>
       </div>
     </div>
-
     <div v-if="modal">
       <div
         class="
@@ -127,7 +136,7 @@ export default {
                   p-2
                   text-white
                   rounded-md
-                  h-16
+                  lg:h-16
                   w-52
                   lg:m-8
                 "

@@ -1,5 +1,5 @@
 <template>
-  <div class="content h-[60px] w-full bg-white">
+  <div class="content h-[60px] w-full bg-white z-50">
     <div class="container pt-4 flex justify-between">
       <router-link to="/">
         <img class="w-40 lg:w-32" src="../assets/logo.png" alt="" />

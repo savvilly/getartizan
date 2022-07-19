@@ -10,7 +10,8 @@
   "dependencies": {
     "vue": "^3.2.25",
     "vue-carousel": "^0.18.0",
-    "vue-router": "4"
+    "vue-router": "4",
+    "vue3-carousel": "^0.1.40"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
