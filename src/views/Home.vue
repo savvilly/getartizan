@@ -7,7 +7,7 @@ import Hero from "../components/Hero.vue";
     <Hero />
     <div>
       <div class="text-center lg:mx-0 mx-6 my-5">
-        <div class="text-3xl capitalize my-4">
+        <div class="text-3xl capitalize my-4 lg:mt-10">
           Browse popular Artisans on Demand
         </div>
         <div class="text-base lg:w-1/2 mx-auto">

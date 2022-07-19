@@ -42,7 +42,7 @@ export default {
       </carousel>
     </div>
     <div
-      class="bg-black absolute top-0 w-full h-[90vh] opacity-80"
+      class="bg-black absolute top-0 w-full h-[90vh] sm:h-[100vh] opacity-60"
     ></div>
 
     <div
@@ -52,7 +52,7 @@ export default {
         lg:w-3/5
         absolute
         top-0
-        sm:top-6
+        sm:top-12
         lg:left-56
         text-center
       "
@@ -161,6 +161,7 @@ input:focus {
 @media (max-width: 600px) {
   .slide {
     transform: scale(2.5);
+    height:100vh;
   }
 }
 </style>
