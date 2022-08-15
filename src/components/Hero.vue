@@ -2,6 +2,8 @@
 // If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import axios from "axios";
+import router from "../router";
 
 export default {
   name: "App",
@@ -13,6 +15,8 @@ export default {
   },
   data() {
     return {
+      state: "",
+      specialty: "",
       settings: {
         itemsToShow: 1,
         snapAlign: "center",
@@ -28,6 +32,23 @@ export default {
         { img: "/img/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg" },
       ],
     };
+  },
+  methods: {
+    searchArtisian() {
+      axios
+        .post("https://getartizan.herokuapp.com/artizan/getArtizan", {
+          state: this.state,
+          specialty: this.specialty,
+        })
+        .then(function (response) {
+          console.log(response.data);
+          localStorage.setItem("users", JSON.stringify(response.data.users));
+          router.push("/search");
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
   },
 };
 </script>
@@ -72,24 +93,27 @@ export default {
           type="text"
           placeholder="Find artisan by category"
           class="p-3 lg:w-auto w-full lg:mb-0 mb-2"
+          v-model="specialty"
         />
-        <input
+        <!-- <input
           type="text"
           placeholder="City"
           class="p-3 lg:w-44 w-full lg:mb-0 mb-2"
-        />
+        /> -->
         <input
           type="text"
           placeholder="Location"
           class="p-3 lg:w-44 w-full lg:mb-0 mb-2"
+          v-model="state"
         />
-        <router-link to="/search">
-          <input
-            type="button"
-            class="p-3 px-14 lg:w-auto w-full lg:rounded-md bg-blue text-white"
-            value="Search"
-          />
-        </router-link>
+        <!-- <router-link to="/search"> -->
+        <input
+          @click="searchArtisian"
+          type="button"
+          class="p-3 px-14 lg:w-auto w-full bg-blue text-white"
+          value="Search"
+        />
+        <!-- </router-link> -->
       </div>
     </div>
     <!-- <div>
@@ -161,7 +185,7 @@ input:focus {
 @media (max-width: 600px) {
   .slide {
     transform: scale(2.5);
-    height:100vh;
+    height: 100vh;
   }
 }
 </style>
